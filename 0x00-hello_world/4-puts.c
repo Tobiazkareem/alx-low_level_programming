@@ -1,13 +1,22 @@
 #include <stdio.h>
 
-/*C program that prints exactly
- * "programming is like building a multilingual puzzle
+/**
+ * main - Entry point
+ *
+ * Description: C program that prints exactly
+ * programming is like building a multilingual puzzle
  * using function puts()
+ * Puts() function is used to write a string
+ * to the standard output
+ *
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 
-int main()
+int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle\n");
 
-	return 0;
+	return (0);
 }
