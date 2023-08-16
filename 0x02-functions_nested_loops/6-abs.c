@@ -3,7 +3,7 @@
 /**
  * _abs - computes absolute value
  *
- * @int: datatype for the integer n
+ * @n: integer n for absolute value
  *
  * Description: this function computes absolute value of an integer
  * taking the absolute of a number is the same as taking
