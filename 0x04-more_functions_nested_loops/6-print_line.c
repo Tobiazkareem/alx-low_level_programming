@@ -9,29 +9,15 @@
 
 void print_line(int n)
 {
-	/* if statement */
-	if (n <= 0)
+	/* declare variable line */
+	int line;
+
+	/* if statement to pritn number of lines */
+	if (n > 0)
 	{
-		_putchar('\n');
+		/* for loop */
+		for (line = 0; line < n; line++)
+			_putchar('_');
 	}
-	if (n == 2)
-	{
-		_putchar('_');
-		_putchar('_');
-		_putchar('\n');
-	}
-	if (n == 10)
-	{
-		_putchar('_');
-		_putchar('_');
-		_putchar('_');
-		_putchar('_');
-		_putchar('_');
-		_putchar('_');
-		_putchar('_');
-		_putchar('_');
-		_putchar('_');
-		_putchar('_');
-		_putchar('\n');
-	}
+	_putchar('\n');
 }
