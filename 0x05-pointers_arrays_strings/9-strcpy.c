@@ -8,7 +8,7 @@
  * Return: return dest
  */
 
-char *_strcpy(char *dest, char *src)
+char *_strcpy(char *dest, const char *src)
 {
 	int count = 0;
 
@@ -18,5 +18,6 @@ char *_strcpy(char *dest, char *src)
 		dest[count] = src[count];
 		count++;
 	}
+	/* dest = '\0'; add null terminator */
 	return (dest);
 }
