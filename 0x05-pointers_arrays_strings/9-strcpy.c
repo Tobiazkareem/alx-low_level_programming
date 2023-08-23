@@ -18,6 +18,6 @@ char *_strcpy(char *dest, const char *src)
 		dest[count] = src[count];
 		count++;
 	}
-	/* dest = '\0'; add null terminator */
+	dest[count] = '\0'; /*add null terminator */
 	return (dest);
 }
