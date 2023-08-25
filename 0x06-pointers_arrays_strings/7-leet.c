@@ -22,5 +22,5 @@ char *leet(char *str)
 		}
 		count++;
 	}
-	return (0);
+	return (str);
 }
