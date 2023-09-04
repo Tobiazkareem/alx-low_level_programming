@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	/* if statement to check if two arguments is recieved */
 	int multiply, first_number, second_number;
 
-	if (argc < 2)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
