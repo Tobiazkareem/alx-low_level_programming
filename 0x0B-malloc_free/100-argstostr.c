@@ -18,9 +18,7 @@ char *argstostr(int ac, char **av)
 
 	/* check if any of ac or av is NULL */
 	if (ac == 0 || av == NULL)
-	{
 		return (NULL);
-	}
 
 	for (count1 = 0; count1 < ac; count1++)
 	{
@@ -28,7 +26,7 @@ char *argstostr(int ac, char **av)
 			size++;
 	}
 
-	results = (char *)malloc(sizeof(char) * size + 1);
+	results = malloc(sizeof(char) * size + 1);
 
 	if (results == NULL)
 		return (NULL);
