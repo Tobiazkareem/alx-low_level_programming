@@ -17,7 +17,7 @@ char *argstostr(int ac, char **av)
 	char *results;
 
 	/* check if any of ac or av is NULL */
-	if (ac == '\0' || av == NULL)
+	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
