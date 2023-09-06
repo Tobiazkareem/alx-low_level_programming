@@ -37,7 +37,6 @@ char *argstostr(int ac, char **av)
 	{
 		for (count2 = 0; av[count1][count2]; count2++)
 			results[index++] = av[count1][count2];
-		
 		results[index++] = '\n'; /* add newline cahr */
 	}
 
