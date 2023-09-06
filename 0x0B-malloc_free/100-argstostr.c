@@ -30,7 +30,7 @@ char *argstostr(int ac, char **av)
 		/* + 1 for newline char */
 	}
 
-	results = (char *) malloc(total_len * sizeof(char));
+	results = (char *)malloc(total_len * sizeof(char));
 	if (results == NULL)
 		return (NULL);
 
