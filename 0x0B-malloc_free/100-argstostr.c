@@ -13,7 +13,7 @@
 char *argstostr(int ac, char **av)
 {
 	/* declare variable */
-	int count1, count2, total_len, index;
+	int count1, count2, size = ac, index;
 	char *results;
 
 	/* check if any of ac or av is NULL */
@@ -22,15 +22,8 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 
-	total_len = 0;
+	results = (char *)malloc(sizeof(char) * size + 1);
 
-	for (count1 = 0; count1 < ac; count1++)
-	{
-		total_len += strlen(av[count1]) + 1;
-		/* + 1 for newline char */
-	}
-
-	results = (char *)malloc(total_len * sizeof(char));
 	if (results == NULL)
 		return (NULL);
 
@@ -44,7 +37,7 @@ char *argstostr(int ac, char **av)
 		results[index++] = '\n'; /* add newline cahr */
 	}
 
-		results[index] = '\0'; /* null terminate the string */
+		results[size] = '\0'; /* null terminate the string */
 
 		return (results);
 }
