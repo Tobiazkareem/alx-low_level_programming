@@ -38,10 +38,9 @@ char *argstostr(int ac, char **av)
 
 	for (count1 = 0; count1 < ac; count1++)
 	{
-		for (count2 = 0; av[count1][count2] != '\0'; count2++)
-		{
+		for (count2 = 0; av[count1][count2]; count2++)
 			results[index++] = av[count1][count2];
-		}
+		
 		results[index++] = '\n'; /* add newline cahr */
 	}
 
