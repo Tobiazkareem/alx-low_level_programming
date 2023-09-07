@@ -49,7 +49,7 @@ int count_words(char *str)
 			count += word_len(str + count);
 		}
 	}
-	return (count);
+	return (in_word);
 }
 
 /**
