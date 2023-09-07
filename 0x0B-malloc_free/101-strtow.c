@@ -36,21 +36,17 @@ int word_len(char *str)
 int count_words(char *str)
 {
 	/*declare variables */
-	int count = 0, in_word = 0, y;
+	int count = 0, in_word = 0, length = 0;
 
-	for (y = 0; str[y] != '\0'; y++)
+	for (count = 0; *(str + count); count++)
+		length++;
+
+	for (count = 0; count < length; count++)
 	{
-		if (str[y] != ' ')
+		if (*(str + count) != ' ')
 		{
-			if (!in_word)
-			{
-				in_word = 1;
-				count++;
-			}
-		}
-		else
-		{
-			in_word = 0;
+			in_word++;
+			count += word_len(str + count);
 		}
 	}
 	return (count);
