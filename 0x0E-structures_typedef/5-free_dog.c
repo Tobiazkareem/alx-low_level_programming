@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 /**
- * free_dog - Frees dogs.
- * @d: The dog to be freed.
+ * free_dog - Frees dog
+ * @d: The dog to be free
  */
 void free_dog(dog_t *d)
 {
